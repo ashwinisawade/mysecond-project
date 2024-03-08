@@ -18,7 +18,7 @@ function PersonComponent() {
 
     return (
         <div>
-            <h1>Person Information</h1>
+            <h1>Person information</h1>
             <p>Address: {address}</p>
         </div>
     );
