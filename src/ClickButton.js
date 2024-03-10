@@ -8,7 +8,7 @@ function ClickButton() {
   
     
     const handleClick = () => {
-        console.log("This is the clickable Button")
+        console.log("This is the clickable button")
       color2({...color1,Ashwini:true,shraddha:false})
   }
   console.log(color1,"dfsavb")
