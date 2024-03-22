@@ -10,7 +10,7 @@ import Stopwatch from './Pages/Stopwatch';
 import Jsonobject from './component/Jsonobject';
 import Postlist from './AxiosComponent';
 import AxiosComponent from './AxiosComponent';
-import RegistrationForm from './RegistrationForm';
+
 import Event from './component/Event';
 import RegexExample from './Regex';
 import FormikComponent from './FormikComponent';
@@ -27,6 +27,25 @@ import Button from './ClickButton';
 import Api from './Api';
 import ClickButton from './ClickButton';
 import ProgressBar from './Progressbar';
+import Validationform from './component/Validationform';
+import Mcheckbox from './Mcheckbox';
+import Indexofmethod from './Indexofmethod';
+import People from './People';
+import Cart from './Cart';
+import Kycform from './Kycform';
+import { createBrowserRouter } from "react-router-dom";
+import * as Sentry from "@sentry/react";
+
+import SessionStorage from './SessionStorage';
+
+import Profile2 from './Profile2';
+
+import Appp from './Appp';
+
+import JwtExample from './JwtExample';
+import WelcomePage from './WelcomePage';
+
+import Sample from './sample';
 
 export const CountContext = React.createContext();
 
@@ -98,6 +117,23 @@ const App = () => {
             <Route path="/clickbutton" element={<ClickButton />} />
             <Route path="/api" element={<Api />} />
             <Route path="/progressbar" element={<ProgressBar />} />
+           
+            <Route path="/Validationform" element={<Validationform />} />
+            <Route path="/Mcheckbox" element={<Mcheckbox />} />
+            <Route path="/Indexofmethod" element={<Indexofmethod />} />
+            <Route path="/People" element={<People />} />
+            <Route path="/Cart" element={<Cart />} />
+            <Route path="/Kycform" element={<Kycform />} />
+            <Route path="/SessionStorage" element={<SessionStorage />} />
+            <Route path="/Appp" element={<Appp/>} />
+            <Route path="/Profile2" element={<Profile2 />} />
+            <Route path="/JwtExample" element={<JwtExample />} />
+            <Route path="/WelcomePage" element={<WelcomePage />} />
+            <Route path="/Sample" element={<Sample/>} />
+            
+            
+
+            {/* <Route path="/Example" element={<Example />} /> */}
           </Routes>
           <CountContext.Provider value={{ CountState:count, Dispatch }}>
             <div className='App'>
